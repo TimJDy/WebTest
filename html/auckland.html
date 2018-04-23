@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Goodwall</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/styleMember.css">
+
+</head>
+	<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body>
+  
+<!-- Top container -->
+<div class="w3-bar w3-top  w3-large top" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  </button>
+  <span class="w3-bar-item w3-left"> <img src="../images/download.png" width="30"> Goodwall</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-red w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="../images/27908364_918689921641497_7814703998977534739_o.jpg" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+
+      <!-- User's name goes here: this is what i'm working on -->
+      <span>Welcome,Tim <strong><script type="text/javascript">displayUserName();</script></strong></span><br>
+    </div>
+  </div>
+  <hr>
+  <!-- <div class="w3-container">
+  </div> -->
+ <div class="w3-bar-block">
+    <a href="goodwall.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Community</a>
+    <a href="universities.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-eye fa-fw"></i>  Universities</a>
+    <a href="error.html"  class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Chat</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  Profile</a><br>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"> Sign Out</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+ <h2>Universities in New Zealand:</h3> <br>
+  <center>
+    <h2>University of Auckland</h2>
+      <img src="../images/1486000022042.jpg" width="500">
+      </center>
+      <p> Description: The University of Auckland is a university located in Auckland, New Zealand. It is the largest and leading university in the country, and was ranked 82nd worldwide in the 2011 QS World University Rankings. Established in 1883 as constituent college of the University of New Zealand, the university is made up of eight faculties over six campuses, and has more than 40,000 students<br><br>
+      Chances of getting in: Dream <br> <br>University Statistics:  <br>Acceptance Rate:N/A <br>Number of students: 33k <br>Student:Teacher: 15:1 <br>Annual Tuition: $6.0k<br><br>
+      Courses offered: Medicine & Dentistry, Law, Biology & related Sciences, Physical Science, Architecture, Building, & Planning, Art & Design, Mechanical-based Engineering, Medical Science & Pharmacy, Communications & Information studies, Education Studies, Sports Science, Nursing, Subject allied to Medicine, Creative Arts, Performing Arts, and Social Work<br><br>
+      Entry Requirements: <br>Average Grade(ABC): B <br>International Baccalaureate(IB): 6 <br>GPA(/4.5): 3<br>Act: 24<br><br>
+      
+      Contact:<br> Number: +6493737513<br>Website: www.auckland.ac.nz <br>Location: New Zealand<br></p>
+    </div>
+
+
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <center>
+    <h2>University of Auckland of Technology</h2>
+ <img src="../images/autbanner.jpg" width="500">
+      </center>
+      <p> Description: The Auckland University of Technology is a university in New Zealand. It was formed on 1 January 2000 when the Auckland Institute of Technologu was granted university status.<br><br>
+      Chances of getting in: Dream <br> <br>University Statistics:  <br>Acceptance Rate:N/A <br>Number of students: 27k <br>Student:Teacher: 24:1 <br>Annual Tuition: $6.0k<br><br>
+      Courses offered: Business, Medicine & Dentistry, Economics, Law, English, Finace & Accounting, Computer Science, Media, Biology & related Sciences, Physical Science, Math, Physical Geography & Environmental Science, Technology, Management, Architecture, Building & Planning, Electronic & Electrical Engineering, Art & Desing, Mechanically-based Engineering, Communications & Information studies, Other Langauges & Area studies, Sport Science, Nursing, Subject allied to Medicine, Psychology, Creative Arts, Tourism, Transport & Travel<br><br>
+      Entry Requirements: <br>Average Grade(ABC): B <br>A-Level: B<br>SAT(600-2400): 1000 <br>GPA(/4.5): 3<br>Act: 24<br><br>
+      Contact:<br> Number: 0800288864<br>Website: www.aut.ac.nz <br>Location: Auckland,New Zealand<br></p>
+    </div>
+}
+
+
+
+  </div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+</body>
+</html>

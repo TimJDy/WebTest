@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goodwall</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/styleMember.css">
+
+<script type="text/javascript" src="../javascript/gw.js"></script>
+</head>
+<body>
+  <style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body>
+  
+<!-- Top container -->
+<div class="w3-bar w3-top w3-large top" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  </button>
+  <span class="w3-bar-item w3-left"> <img src="../images/download.png" width="30"> Goodwall</span>
+</div>
+
+<!-- Sidebar/menu -->
+<<nav class="w3-sidebar w3-collapse w3-animate-left w3-red " style="z-index:3;width:300px;" id="mySidebar" ><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="../images/27908364_918689921641497_7814703998977534739_o.jpg" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <!-- User's name goes here: this is what i'm working on -->
+      <span>Welcome,Tim <strong><script type="text/javascript">displayUserName();</script></strong></span><br>
+    </div>
+  </div>
+  <hr>
+  <!-- <div class="w3-container">
+  </div> -->
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Community</a>
+    <a href="universities.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Universities</a>
+    <a href="error.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Chat</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  Profile</a><br>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"> Sign Out</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> <br> <br>
+
+<!-- !PAGE CONTENT! -->
+  <div class="container user-post">
+    <div class="w3-main content">
+      <center>
+      <header class="w3-bar w3-white"> <img src="https://i.ytimg.com/vi/vovbM5BNiZA/maxresdefault.jpg"           class="w3-circle" width="10%">Scarlet </header>
+       <img src="https://i.ytimg.com/vi/vovbM5BNiZA/maxresdefault.jpg" style="width:50%;">
+       </center>
+    </div>
+    
+ 
+  
+<div class="w3-container w3-white ">
+    <div class="w-3 main content"> 
+  <center>
+  <button type="submit" onclick="like()">Like</button>
+  <button type="submit" onclick="comment()">Comment</button>
+  </center>
+  </div>
+
+  </div>
+
+
+  <!--second post -->    
+  <div class="container user-post">
+    <div class="w3-main content">
+      <center>
+      <header class="w3-bar w3-white"> <img src="../images/27908364_918689921641497_7814703998977534739_o.jpg" class="w3-square" style="width:5%;">John</header>
+       <img src="../images/Tree.png" style="width:50%;">
+       </center>
+    </div>
+    
+ 
+  <div class="w3-container w3-white ">
+    <div class="w-3 main content"> 
+  <center>
+  <button type="submit" onclick="like()">Like</button>
+  <button type="submit" onclick="comment()">Comment</button>
+  </center>
+  </div>
+
+  </div>
+  
+</body>
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+</body>
+</html>
